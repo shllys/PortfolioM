@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Light</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./img/Paw-logo.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Pagina principal -->
+    <div class="principal active">
+      <!--     Header -->
+      <div class="header">
+        <!--       Menu -->
+        <div class="icon-menu">
+          <i class='bx bx-menu' id="menu"></i>
+        </div>
+        
+        <div class="menu menu-active">
+          <a href="#" class="line" onclick="frontH()">HOME</a>
+          <a href="#" class="line" onclick="frontS()">ABOUT</a>
+          <div class="list">
+            <a href="#" class="line menu">PORTFOLIO</a>
+            <div class="port">
+              <a href="#" class="line plus" onclick="portD()">DESIGN</a>
+              <a href="#" class="line plus" onclick="portP()">PAGES</a>
+            </div>
+          </div>
+          <a href="#" class="line" onclick="frontC()">CONTACT</a>
+          <!-- Logo -->
+          <h1 class="logo"><img src="./img/Paw-logo.png" alt="Logo" /></h1>
+        </div>
+      
+      </div>
+
+      <div class="more">
+        <div class="imgpress">
+          <img src="./img/shellys.png" alt="" />
+        </div>
+
+        <div class="right">
+          <div class="name">
+            <h1>Mishelis Martinez</h1>
+            <h3>Designer & Developer</h3>
+          </div>
+
+          <div class="skillP active">
+            <div class="front" onclick="frontS()">
+              <p class="titles">SKILL</p>
+            </div>
+            <!-- Habilidades -->
+            <div>
+              <i class="bx bxl-css3"></i>
+              <i class="bx bxl-figma"></i>
+              <i class="bx bxl-bootstrap"></i>
+              <i class="bx bxl-javascript"></i>
+              <!-- <i class="bx bxl-react"></i> -->
+            </div>
+          </div>
+
+          <div class="portfolioP active">
+            <p class="titles">PORTFOLIO</p>
+            <!--   imágenes -->
+            <img onclick="portD()" src="./img/desing-icon.png" alt="Diseños" />
+            <img onclick="portP()" src="./img/code-icon.png" alt="Paginas" />
+          </div>
+
+          <div class="contactP">
+            <i class="bx bx-envelope"></i>
+            <i class="bx bx-copy-alt" onclick="copy()">
+              <p class="gmail">shllygp17.8@gmail.com</p>
+              <span class="mensaje"></span>
+            </i>
+            <i class="bx bx-file"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <div class="about inactive">
+      <div class="menuV">
+        <div class="headerv">
+          <!--       Menu -->
+          <a href="#" class="line" onclick="back()">HOME</a>
+          <div class="list">
+            <a href="#" class="line menu">PORTFOLIO</a>
+            <div class="port">
+              <a href="#" class="line plus" onclick="portD()">DESIGN</a>
+              <a href="#" class="line plus" onclick="portP()">PAGES</a>
+            </div>
+          </div>
+          <a href="#" class="line" onclick="frontC()">CONTACT</a>
+          <!-- Logo -->
+          <h1 class="logo"><img src="./img/Paw-logo.png" alt="Logo" /></h1>
+        </div>
+      </div>
+
+      <div class="skillv">
+        <div class="back" onclick="back()">
+          <p class="titles">SKILL</p>
+        </div>
+        <!-- Habilidades -->
+        <div class="habilidades">
+          <img src="./img/hojas.png" alt="" class="right" />
+          <div class="medium">
+            <span class="leven">Medium</span>
+            <!-- <i class="bx bx-pencil"></i> -->
+            <i class="bx bxl-css3"></i>
+            <i class="bx bxl-figma"></i>
+          </div>
+          <div class="divide"></div>
+          <div class="basic">
+            <span class="leven">Basic</span>
+            <i class="bx bxl-bootstrap"></i>
+            <i class="bx bxl-javascript"></i>
+            <!-- <i class="bx bxl-react"></i> -->
+          </div>
+          <img src="./img/hojas.png" alt="" class="left" />
+        </div>
+      </div>
+
+      <div class="about-me">
+        <div class="back" onclick="back()">
+          <p class="titles">ABOUT ME</p>
+        </div>
+        <div class="texts">
+          <div class="paragraph">
+            <p>
+              "Estudia de forma Autodidacta, busca ser mejor y tener habilidades
+              que le hagan ser autosuficiente, emprender su propia carrera de
+              diseñadora web, ilustradora, desarrolladora Front-End y de
+              modelado 3D... Aun falta pero quiere ser fuerte."
+            </p>
+          </div>
+          <div class="image">
+            <img class="big-logo" src="./img/logo-black.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <!-- portfolio -->
+
+    <div class="design inactive">
+      <div class="portdesign">
+        <div class="backp" onclick="back()">
+          <img src="./img/desing-icon.png" alt="" />
+          <p class="titlesP">Designs</p>
+        </div>
+
+        <div class="description">
+          <span>No habrá mucho pero...</span>
+          <p>
+            Diseñar las paginas es algo que me divierte y relaja, a la hora de
+            pensar como seria una pagina para mis futuros clientes...
+          </p>
+        </div>
+
+        <div class="headerv">
+          <!--       Menu -->
+          <a href="#" class="line" onclick="back()">HOME</a>
+          <a href="#" class="line" onclick="frontS()">ABOUT</a>
+          <div class="list">
+            <a href="#" class="line menu">PORTFOLIO</a>
+            <div class="port">
+              <a href="#" class="line plus" onclick="portP()">PAGES</a>
+            </div>
+          </div>
+          <a href="#" class="line" onclick="frontC()">CONTACT</a>
+          <!-- Logo -->
+          <h1 class="logo"><img src="./img/Paw-logo.png" alt="Logo" /></h1>
+        </div>
+
+        <div class="galery">
+          <img class="img" src="./img/lykos.png" alt="" />
+          <img class="img" src="./img/food.png" alt="" />
+          <img class="img" src="./img/canines.png" alt="" />
+          <img class="img" src="./img/autodic.png" alt="" />
+          <img class="img" src="./img/art.png" alt="" />
+          <div class="more">
+            <i class="bx bxl-instagram"></i>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <section class="imagen-light">
+          <div>
+            <img src="./img/lykos.png" alt="" class="agregar-imagen" />
+          </div>
+          <div class="info-image">
+            <div class="information">
+              Estoy haciendo la practica de generar buenos dices para mis
+              futuros clientes y hasta personales buscando la comodidad,claridad
+              y buen contraste, sin dejar de aprender acepto sus consejos.
+            </div>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-figma"></i>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="pages inactive">
+      <div class="portpages">
+        <div class="backp" onclick="back()">
+          <img src="./img/code-icon.png" alt="" />
+          <p class="titlesP">Pages</p>
+        </div>
+
+        <div class="description">
+          <span>No habrá mucho pero...</span>
+          <p>
+            Programar se me a hecho difícil pero aun asi no me he rendido y
+            espero ser mejor cada vez...
+          </p>
+        </div>
+
+        <div class="headerv">
+          <!--       Menu -->
+          <a href="#" class="line" onclick="back()">HOME</a>
+          <a href="#" class="line" onclick="frontS()">ABOUT</a>
+          <div class="list">
+            <a href="#" class="line menu">PORTFOLIO</a>
+            <div class="port">
+              <a href="#" class="line plus" onclick="portD()">DESIGN</a>
+            </div>
+          </div>
+          <a href="#" class="line" onclick="frontC()">CONTACT</a>
+          <!-- Logo -->
+          <h1 class="logo"><img src="./img/Paw-logo.png" alt="" /></h1>
+        </div>
+
+        <div class="galery">
+          <img class="img" src="./img/halloween.png" alt="" />
+          <img class="img" src="./img/colorsgalery.png" alt="" />
+          <img class="img" src="./img/page-grid.jpg" alt="" />
+          <img class="img" src="./img/Calculadora.png" alt="" />
+          <img class="img" src="./img/vita.png" alt="" />
+          <div class="more">
+            <i class="bx bxl-github"></i>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <section class="imagen-light">
+          <img src="./img/halloween.png" alt="" class="agregar-imagen" />
+        </section>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <!-- Contact -->
+    <div class="contact inactive">
+      <div class="contact-me">
+        <div class="back" onclick="back()">
+          <p class="titles">CONTACT</p>
+        </div>
+
+        <div class="headerv">
+          <!--       Menu -->
+          <a href="#" class="line" onclick="back()">HOME</a>
+          <a href="#" class="line" onclick="frontS()">ABOUT</a>
+          <div class="list">
+            <a href="#" class="line menu">PORTFOLIO</a>
+            <div class="port">
+              <a href="#" class="line plus" onclick="portD()">DESIGN</a>
+              <a href="#" class="line plus" onclick="portP()">PAGES</a>
+            </div>
+          </div>
+          <!-- Logo -->
+          <h1 class="logo"><img src="./img/Paw-logo.png" alt="" /></h1>
+        </div>
+
+        <form
+          action="https://formsubmit.co/shllygp17.8@gmail.com"
+          method="POST"
+          class="form"
+        >
+          <div class="datos">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input type="email" name="email" id="correo" placeholder="Correo" />
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Numero"
+            />
+          </div>
+          <div class="divide"></div>
+          <textarea
+            name="message"
+            id="message"
+            class="message"
+            placeholder="Message"
+          >
+          </textarea>
+
+          <button class="btn" type="submit">Enviar</button>
+
+          <!-- <input type="hidden" name="_next" value="file:///C:/Users/user/Documents/progrm/PortfolioLigth/index.html#">
+          <input type="hidden" name="_captcha" value="false"> -->
+        </form>
+
+        <div class="contact-icons">
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-github"></i>
+          <i class="bx bxl-linkedin-square"></i>
+        </div>
+      </div>
+
+      <div class="chat-burble">
+        <img class="burble" src="./img/chat-bubble.png" alt="" />
+      </div>
+
+      <div class="hecho-por">
+        <h1 class="name">©Mishelis Y. Martinez</h1>
+        <span class="fecha">2024</span>
+      </div>
+    </div>
+    <!-- Contact -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
