@@ -539,9 +539,11 @@
   background-color: rgba(0, 0, 0, 0.3803921569);
   border-radius: 15px;
 }
-.about .about-me .texts .image .big-logo {
+.about .about-me .texts .big-logo {
   width: 20rem;
   height: 15rem;
+  position: relative;
+  left: 5rem;
 }
 
 .design {
@@ -1157,55 +1159,6 @@
   bottom: 20px;
 }
 
-.imagen-light {
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  height: 100vh;
-  top: -5.1rem;
-  left: -20.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(-100%);
-  transition: transform 0.2s ease-in-out;
-}
-.imagen-light .agregar-imagen {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 66rem;
-  height: 36rem;
-  border-radius: 10px;
-  transform: scale(0);
-  transition: transform 0.3s 0.2s;
-}
-.imagen-light .showImagen {
-  transform: scale(1);
-}
-.imagen-light .info-image {
-  background: linear-gradient(90deg, rgba(0, 248, 248, 0.3764705882) 0%, transparent 100%);
-  width: 18rem;
-  height: 36rem;
-  border-radius: 10px;
-  padding: 0 30px;
-}
-.imagen-light .info-image .information {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-  color: #d9d9d9;
-}
-.imagen-light .info-image .bx {
-  font-size: 2.5rem;
-  color: #d9d9d9;
-}
-
-.show {
-  transform: translate(0);
-  z-index: 1;
-}
-
 .inactive {
   display: none;
 }
@@ -1214,150 +1167,6 @@
   display: block;
 }
 
-@media (max-width: 1024px) {
-  .principal .header {
-    height: 15vh;
-  }
-  .principal .header .line {
-    font-size: 0.8rem;
-    margin-top: 10px;
-  }
-  .principal .header .list .port .plus {
-    font-size: 13px;
-  }
-  .principal .header .list .in-menu {
-    height: 55px;
-  }
-  .principal .header .logo {
-    width: 35px;
-    height: 35px;
-  }
-  .principal .header .logo img {
-    width: 25px;
-    height: 25px;
-  }
-  .principal .more img {
-    width: 25rem;
-    top: 1rem;
-  }
-  .principal .more .right .name {
-    font-size: 19px;
-    right: 20rem;
-    top: 6rem;
-  }
-  .principal .more .skillP {
-    top: 2rem;
-    right: 0rem;
-    width: 16rem;
-    height: 27px;
-  }
-  .principal .more .skillP .bx {
-    font-size: 1.6rem;
-  }
-  .principal .more .portfolioP {
-    bottom: 4.5rem;
-    right: 0rem;
-    width: 25rem;
-    height: 8rem;
-  }
-  .principal .more .portfolioP img {
-    width: 12rem;
-    height: 8rem;
-  }
-  .principal .more .contactP {
-    font-size: 2rem;
-  }
-  .principal .more .contactP .bx-copy-alt {
-    right: 2.5rem;
-  }
-  .principal .more .contactP .bx-copy-alt:hover {
-    right: 2rem;
-  }
-  .about .about-me {
-    top: 20px;
-    left: 7rem;
-    width: 20rem;
-    height: 26rem;
-  }
-  .about .about-me .titles {
-    font-size: 12px;
-  }
-  .about .about-me .texts .paragraph {
-    margin: 20px 10px;
-    font-size: 1rem;
-  }
-  .about .about-me .texts .image .big-logo {
-    width: 15rem;
-    height: 10rem;
-  }
-  .about .skillv {
-    top: 7.5rem;
-    left: 36rem;
-    width: 12rem;
-    height: 20rem;
-  }
-  .about .skillv .titles {
-    font-size: 12px;
-  }
-  .about .skillv .habilidades .medium .leven {
-    font-size: 15px;
-  }
-  .about .skillv .habilidades .medium .bx {
-    font-size: 2.3rem;
-  }
-  .about .skillv .habilidades .divide {
-    left: 128px;
-    height: 240px;
-    top: -6rem;
-  }
-  .about .skillv .habilidades .basic {
-    top: 1rem;
-    left: 6rem;
-  }
-  .about .skillv .habilidades .basic .leven {
-    font-size: 15px;
-  }
-  .about .skillv .habilidades .basic .bx {
-    font-size: 2.3rem;
-  }
-  .about .skillv .habilidades .right {
-    right: -3.8rem;
-    top: 8rem;
-    width: 5rem;
-    height: 5rem;
-  }
-  .about .skillv .habilidades .left {
-    bottom: 6rem;
-    left: 12rem;
-    width: 5rem;
-    height: 5rem;
-  }
-  .about .headerv {
-    left: 35rem;
-    top: 20px;
-    height: 20px;
-    width: 19rem;
-    padding-right: 0;
-  }
-  .about .headerv .line {
-    font-size: 0.8rem;
-    margin-top: 5px;
-  }
-  .about .headerv .list .port .plus {
-    font-size: 13px;
-  }
-  .about .headerv .list .in-menu {
-    height: 55px;
-  }
-  .about .headerv .logo {
-    width: 35px;
-    height: 35px;
-  }
-  .about .headerv .logo img {
-    width: 25px;
-    height: 25px;
-  }
-}
 @media (max-width: 448px) {
   .principal {
     background-image: url(./img/backgraund-tree-movile.jpg);
@@ -1366,13 +1175,21 @@
   }
   .principal .header {
     height: 20vh;
+    z-index: 0;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
   }
   .principal .header .menu {
     display: none;
     flex-direction: column;
     align-items: end;
-    background-color: #affffe;
     z-index: 10;
+    background-color: #00f8f8;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    top: -17px;
+    right: -17px;
   }
   .principal .header .menu .line {
     font-size: 0.8rem;
@@ -1444,5 +1261,158 @@
   }
   .principal .more .contactP .bx-copy-alt .gmail {
     display: none;
+  }
+  .about {
+    background-image: url(./img/lightP2-movile.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+  }
+  .about .icon-menu {
+    display: block;
+    float: right;
+    font-size: 3rem;
+    color: #00f8f8;
+    position: relative;
+    right: 25px;
+    top: 25px;
+  }
+  .about .about-me {
+    width: 21rem;
+    height: 44rem;
+    left: 0.5rem;
+    top: 80px;
+  }
+  .about .about-me .texts {
+    flex-direction: column;
+    background-color: rgba(175, 255, 254, 0.1882352941);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    line-height: 1.5;
+    border-radius: 16px;
+  }
+  .about .about-me .texts .paragraph {
+    margin: 20px 10px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+  }
+  .about .about-me .texts .big-logo {
+    width: 9rem;
+    height: 6rem;
+    left: 6.5rem;
+  }
+  .about .headerv {
+    display: none;
+  }
+  .about .skillv {
+    top: 28rem;
+    left: 0.6rem;
+    border: none;
+    height: 342px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .about .skillv .habilidades .medium {
+    top: -5rem;
+  }
+  .about .skillv .habilidades .divide {
+    top: -8rem;
+    height: 305px;
+  }
+  .about .skillv .habilidades .basic {
+    top: -5rem;
+  }
+  .about .skillv .habilidades .right {
+    display: none;
+  }
+  .about .skillv .habilidades .left {
+    display: none;
+  }
+  .design {
+    background-image: url(./img/lightP2-movile.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+  }
+  .design .icon-menu {
+    display: block;
+    float: right;
+    font-size: 3rem;
+    color: #00f8f8;
+    position: relative;
+    right: 25px;
+    top: 25px;
+  }
+  .design .portdesign {
+    width: 21rem;
+    height: 44rem;
+    left: 0.5rem;
+    top: 80px;
+  }
+  .design .portdesign .backp img {
+    top: -5.5rem;
+    left: 0;
+  }
+  .design .portdesign .backp .titlesP {
+    top: 4.5rem;
+    left: 2.7rem;
+  }
+  .design .portdesign .headerv {
+    display: none;
+  }
+  .design .portdesign .description {
+    width: 320px;
+    top: 120px;
+    left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0 30px 30px 30px;
+    padding: 20px;
+  }
+  .pages {
+    background-image: url(./img/lightP2-movile.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+  }
+  .pages .icon-menu {
+    display: block;
+    float: right;
+    font-size: 3rem;
+    color: #00f8f8;
+    position: relative;
+    right: 25px;
+    top: 25px;
+  }
+  .pages .portpages {
+    width: 21rem;
+    height: 44rem;
+    left: 0.5rem;
+    top: 80px;
+  }
+  .pages .portpages .backp img {
+    top: -5.5rem;
+    left: 0;
+  }
+  .pages .portpages .backp .titlesP {
+    top: 4.5rem;
+    left: 3.7rem;
+  }
+  .pages .portpages .headerv {
+    display: none;
+  }
+  .pages .portpages .description {
+    width: 320px;
+    top: 120px;
+    left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0 30px 30px 30px;
+    padding: 20px;
+  }
+  .galery {
+    grid-template-columns: repeat(2, 1fr);
+    left: 2rem;
+    top: 19rem;
+  }
+  .galery .img {
+    width: 9.5rem;
+    height: 6rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -42,7 +42,7 @@
         transition: all 1s ease-in-out;
         position: relative;
         font-size: 1.2rem;
-  
+
         &::before {
           content: "";
           position: absolute;
@@ -63,7 +63,7 @@
           right: 0;
           transition: 0.3s ease-in;
         }
-  
+
         &:hover::before {
           opacity: 1;
           width: 50%;
@@ -79,7 +79,7 @@
         align-items: start;
         width: 7rem;
         color: #d9d9d9;
-  
+
         .port {
           margin: 15px 0;
           visibility: hidden;
@@ -93,7 +93,7 @@
           border-radius: 5px;
           padding: 0 10px 0 5px;
           transition: all 0.4s ease-in-out;
-  
+
           .plus {
             margin-top: 10px;
             text-align: center;
@@ -106,7 +106,7 @@
           height: 70px;
         }
       }
-  
+
       .logo {
         border: #affffe 1px solid;
         border-radius: 50%;
@@ -115,7 +115,7 @@
         place-items: center;
         width: 50px;
         height: 50px;
-  
+
         img {
           width: 35px;
           height: 35px;
@@ -171,7 +171,7 @@
       border-radius: 15px;
       border: 2px solid #00f8f8;
       display: flex;
-      
+
       justify-content: space-between;
       align-items: center;
       padding: 10px 30px;
@@ -586,11 +586,11 @@
         background-color: #00000061;
         border-radius: 15px;
       }
-      .image {
-        .big-logo {
-          width: 20rem;
-          height: 15rem;
-        }
+      .big-logo {
+        width: 20rem;
+        height: 15rem;
+        position: relative;
+        left: 5rem;
       }
     }
   }
@@ -1248,57 +1248,55 @@
     }
   }
 }
-.imagen-light {
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  height: 100vh;
-  top: -5.1rem;
-  left: -20.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(-100%);
-  transition: transform 0.2s ease-in-out;
+// .imagen-light {
+//   position: relative;
+//   background: rgba(0, 0, 0, 0.5);
+//   width: 100vw;
+//   height: 100vh;
+//   top: -5.1rem;
+//   left: -20.9rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transform: translate(-100%);
+//   transition: transform 0.2s ease-in-out;
 
-  .agregar-imagen {
-    object-fit: cover;
-    width: 66rem;
-    height: 36rem;
-    border-radius: 10px;
-    transform: scale(0);
-    transition: transform 0.3s 0.2s;
-  }
-  .showImagen {
-    transform: scale(1);
-  }
-  
-  .info-image {
-    background: linear-gradient(90deg, #00f8f860 0%, transparent 100%);
-    width: 18rem;
-    height: 36rem;
-    border-radius: 10px;
-    padding: 0 30px;
+//   .agregar-imagen {
+//     object-fit: cover;
+//     width: 66rem;
+//     height: 36rem;
+//     border-radius: 10px;
+//     transform: scale(0);
+//     transition: transform 0.3s 0.2s;
+//   }
+//   .showImagen {
+//     transform: scale(1);
+//   }
 
-    .information {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-size: 1.2rem;
-      font-family: "Roboto", sans-serif;
-      color: #d9d9d9;
-    }
-    .bx {
-      font-size: 2.5rem;
-      color: #d9d9d9;
-    }
-  }
-}
-.show {
-  transform: translate(0);
-  z-index: 1;
-}
+//   .info-image {
+//     background: linear-gradient(90deg, #00f8f860 0%, transparent 100%);
+//     width: 18rem;
+//     height: 36rem;
+//     border-radius: 10px;
+//     padding: 0 30px;
 
-
+//     .information {
+//       margin-top: 40px;
+//       margin-bottom: 20px;
+//       font-size: 1.2rem;
+//       font-family: "Roboto", sans-serif;
+//       color: #d9d9d9;
+//     }
+//     .bx {
+//       font-size: 2.5rem;
+//       color: #d9d9d9;
+//     }
+//   }
+// }
+// .show {
+//   transform: translate(0);
+//   z-index: 1;
+// }
 
 .inactive {
   display: none;
@@ -1306,189 +1304,6 @@
 
 .active {
   display: block;
-}
-
-
-@media (max-width: 1024px) {
-  .principal {
-    .header {
-      height: 15vh;
-
-      .line {
-        font-size: .8rem;
-        margin-top: 10px;
-      }
-      .list {
-        .port {
-          .plus {
-            font-size: 13px;
-          }
-        }
-        .in-menu {
-          height: 55px;
-        }
-      }
-      .logo {
-        width: 35px;
-        height: 35px;
-
-        img {
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
-    .more {
-      img {
-        width: 25rem;
-        top: 1rem;
-      }
-      .right {
-        .name {
-          font-size: 19px;
-          right: 20rem;
-          top: 6rem;
-        }
-      }
-      .skillP {
-        top: 2rem;
-        right: 0rem;
-        width: 16rem;
-        height: 27px;
-
-        .bx {
-          font-size: 1.6rem;
-        }
-      }
-      .portfolioP {
-        bottom: 4.5rem;
-        right: 0rem;
-        width: 25rem;
-        height: 8rem;
-
-        img {
-          width: 12rem;
-          height: 8rem;
-        }
-      }
-      .contactP {
-        font-size: 2rem;
-
-        .bx-copy-alt {
-          right: 2.5rem;
-
-          &:hover {
-            right: 2rem;
-          }
-        }
-      }
-    }
-  }
-
-  .about {
-    .about-me {
-      top: 20px;
-      left: 7rem;
-      width: 20rem;
-      height: 26rem;
-
-      .titles {
-        font-size: 12px;
-      }
-      .texts {
-        .paragraph {
-          margin: 20px 10px;
-          font-size: 1rem;
-        }
-        .image {
-          .big-logo {
-            width: 15rem;
-            height: 10rem;
-          }
-        }
-      }
-    }
-    .skillv {
-      top: 7.5rem;
-      left: 36rem;
-      width: 12rem;
-      height: 20rem;
-
-      .titles {
-        font-size: 12px;
-      }
-
-      .habilidades {
-        .medium {
-          .leven {
-            font-size: 15px;
-          }
-          .bx { 
-            font-size: 2.3rem;
-          }
-        }
-        .divide {
-          left: 128px;
-          height: 240px;
-          top: -6rem;
-        }
-        .basic {
-          top: 1rem;
-          left: 6rem;
-
-          .leven {
-            font-size: 15px;
-          }
-          .bx { 
-            font-size: 2.3rem;
-          }
-        }
-        .right {
-          right: -3.8rem;
-          top: 8rem;
-          width: 5rem;
-          height: 5rem;
-        }
-        .left {
-          bottom: 6rem;
-          left: 12rem;
-          width: 5rem;
-          height: 5rem;
-        }
-      }
-    }
-    .headerv {
-      left: 35rem;
-      top: 20px;
-      height: 20px;
-      width: 19rem;
-      padding-right: 0;
-
-      .line {
-        font-size: .8rem;
-        margin-top: 5px;
-      }
-      .list {
-        .port {
-          .plus {
-            font-size: 13px;
-          }
-        }
-        .in-menu {
-          height: 55px;
-        }
-      }
-      .logo {
-        width: 35px;
-        height: 35px;
-
-        img {
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 448px) {
@@ -1499,16 +1314,23 @@
 
     .header {
       height: 20vh;
+      z-index: 0;
+      backdrop-filter: blur(0px);
 
       .menu {
         display: none;
         flex-direction: column;
         align-items: end;
-        background-color: #affffe;
         z-index: 10;
+        background-color: #00f8f8;
+        position: absolute;
+        height: 100vh;
+        width: 30vw;
+        top: -17px;
+        right: -17px;
 
         .line {
-          font-size: .8rem;
+          font-size: 0.8rem;
           margin-top: 10px;
         }
         .list {
@@ -1524,7 +1346,7 @@
         .logo {
           width: 35px;
           height: 35px;
-  
+
           img {
             width: 25px;
             height: 25px;
@@ -1539,13 +1361,12 @@
         float: right;
         font-size: 2.5rem;
       }
-
     }
     .more {
       img {
         width: 28rem;
         top: 5rem;
-        left: -.1rem;
+        left: -0.1rem;
       }
       .right {
         .name {
@@ -1595,4 +1416,182 @@
       }
     }
   }
+
+  .about {
+    background-image: url(./img/lightP2-movile.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+
+    .icon-menu {
+      display: block;
+      float: right;
+      font-size: 3rem;
+      color: #00f8f8;
+      position: relative;
+      right: 25px;
+      top: 25px;
+    }
+
+    .about-me {
+      width: 21rem;
+      height: 44rem;
+      left: 0.5rem;
+      top: 80px;
+
+      .texts {
+        flex-direction: column;
+        background-color: #affffe30;
+        backdrop-filter: blur(10px);
+        line-height: 1.5;
+        border-radius: 16px;
+
+        .paragraph {
+          margin: 20px 10px;
+          font-size: 1rem;
+          background: none;
+          border: none;
+        }
+        .big-logo {
+          width: 9rem;
+          height: 6rem;
+          left: 6.5rem;
+        }
+      }
+    }
+    .headerv {
+      display: none;
+    }
+    .skillv {
+      top: 28rem;
+      left: .6rem;
+      border: none;
+      height: 342px;
+      backdrop-filter: blur(10px);
+
+      .habilidades {
+        .medium {
+          top: -5rem;
+        }
+        .divide {
+          top: -8rem;
+          height: 305px;
+        }
+        .basic {
+          top: -5rem;
+        }
+        .right {
+          display: none;
+        }
+        .left {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .design {
+    background-image: url(./img/lightP2-movile.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+
+    .icon-menu {
+      display: block;
+      float: right;
+      font-size: 3rem;
+      color: #00f8f8;
+      position: relative;
+      right: 25px;
+      top: 25px;
+    }
+
+    .portdesign {
+      width: 21rem;
+      height: 44rem;
+      left: 0.5rem;
+      top: 80px;
+
+      .backp {
+        img {
+          top: -5.5rem;
+          left: 0;
+        }
+        .titlesP {
+          top: 4.5rem;
+          left: 2.7rem;
+        }
+      }
+
+      .headerv {
+        display: none;
+      }
+
+      .description {
+        width: 320px;
+        top: 120px;
+        left: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0 30px 30px 30px;
+        padding: 20px;
+      }
+    }
+  }
+
+  .pages {
+    background-image: url(./img/lightP2-movile.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+
+    .icon-menu {
+      display: block;
+      float: right;
+      font-size: 3rem;
+      color: #00f8f8;
+      position: relative;
+      right: 25px;
+      top: 25px;
+    }
+
+    .portpages {
+      width: 21rem;
+      height: 44rem;
+      left: 0.5rem;
+      top: 80px;
+
+      .backp {
+        img {
+          top: -5.5rem;
+          left: 0;
+        }
+        .titlesP {
+          top: 4.5rem;
+          left: 3.7rem;
+        }
+      }
+
+      .headerv {
+        display: none;
+      }
+
+      .description {
+        width: 320px;
+        top: 120px;
+        left: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0 30px 30px 30px;
+        padding: 20px;
+      }
+    }
+  }
+
+  .galery {
+    grid-template-columns: repeat(2, 1fr);
+    left: 2rem;
+    top: 19rem;
+  
+    .img {
+      width: 9.5rem;
+      height: 6rem;
+    }
+  }
 }
+

@@ -124,32 +124,9 @@ list.forEach(function (item) {
 });
 // PortMenu ---------------
 
-// PageInfo -------------------
+// alert-----
+function alert() {
+  alert('Por Ahora son todas las que hay');
+}
+// alert-----
 
-const contenedorLight = document.querySelectorAll('.imagen-light');
-
-contenedorLight.forEach(contain => {
-    let light = contain.querySelector('.agregar-imagen');
-    let imagenes = document.querySelectorAll('.img');
-
-    imagenes.forEach (imagen =>{
-        imagen.addEventListener('click', () => {
-            aparecerImagen(imagen.getAttribute('src'))
-        })
-    })
-
-    contain.addEventListener('click', (e) => {
-        if (e.target !== light){
-            contain.classList.toggle('show')
-            light.classList.toggle('showImagen')
-        }
-    })
-
-    const aparecerImagen = (imagen) =>{
-        light.src = imagen;
-        contain.classList.toggle('show')
-        light.classList.toggle('showImagen')
-    }
-})
-
-// PageInfo -------------------
